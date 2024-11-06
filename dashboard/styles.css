@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #f4f3f8;
+}
+
+.dashboard {
+  display: flex;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.account-logo img {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  border-radius: 50%; /* Makes it circular */
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #451086;
+  color: white;
+  padding: 20px 20px 20px 40px;
+}
+
+.sidebar h2 {
+  color: #d1c4e9;
+  margin-bottom: 35px;
+}
+
+.sidebar ul {
+  list-style-type: square;
+}
+
+.sidebar ul li {
+  margin: 20px 5px;
+}
+
+.sidebar ul li a {
+  color: #e1bee7;
+  text-decoration: none;
+  font: bold;
+}
+
+.sidebar ul li a:hover {
+  color: #f3e5f5;
+}
+
+/* Main Content Now */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f3e5f5;
+}
+
+.section {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.drop-area {
+  border: 2px dashed #ab47bc;
+  padding: 20px;
+  background-color: #ede7f6;
+  text-align: center;
+  color: #6a1b9a;
+  border-radius: 8px;
+}
+
+.drop-area.highlight {
+  background-color: #ce93d8;
+}
+
+.button {
+  background-color: #7b1fa2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #6a1b9a;
+}
+
+#download-button {
+  background-color: #4a148c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+a {
+  color: #ab47bc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6a1b9a;
+}

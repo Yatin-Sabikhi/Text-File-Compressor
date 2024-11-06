@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decompression Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="index.html">Compression Page</a></li>
+                <li><a href="decompress.html">Decompression Page</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#contact">Help & Support</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <div class="account-logo">
+                    <img src="user.png" alt="user icon">
+                </div>
+            </header>
+
+            <!-- Upload Section -->
+            <section id="upload-section" class="section">
+                <h3>Upload Your File</h3>
+                <div id="drop-area" class="drop-area">
+                    <p>Drag and drop your file here</p>
+                    <input type="file" id="fileElem" accept=".txt" onchange="handleFileUpload(this.files)">
+                    <label class="button" for="fileElem">Browse</label>
+                </div>
+                <div id="file-details"></div>
+                <!-- Change the button text here to match decompression -->
+                <button class="button" onclick="decompressFile()">Decompress File</button>
+            </section>
+
+            <!-- Decompression Results -->
+            <section id="result" class="section">
+                <h3>Decompression Result</h3>
+                <p id="Original-size"></p>
+                <p id="Decompressed-size"></p>
+                <button id="download-button" style="display: none;">Download Decompressed File</button>
+            </section>
+
+            <!-- History Section -->
+            <section id="history" class="section">
+                <h3>Decompression History</h3>
+                <div id="history-list">No history available.</div>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
