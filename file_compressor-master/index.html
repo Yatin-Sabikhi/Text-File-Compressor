@@ -1,0 +1,65 @@
+<!-- Author : Samyak Jain
+Created on : 30 June 2020 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>File Compressor</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' href='styles.css'>
+	<!-- <script src='heap_implementation.js' type="module"></script>
+	<script src='codec_implementation.js' type="module"></script> -->
+	<script src='script.js' type="text/javascript"></script>
+</head>
+
+<!-- <body onload="onloadfn();"> -->
+<body>
+	<h1  id="heading">COMPRESS OR DE-COMPRESS YOUR FILE IN THREE EASY STEPS!! </h1>
+	<div class="bigdiv">
+		<h2 class="align">STEP 1: UPLOAD YOUR FILE</h2>
+		<div class="align" id="step1">
+			<img src="assets/text_file_icon1.png"  id="textImg">
+			<br>
+			<form method="post" enctype="multipart/form-data" class="form" id="fileform">
+				<input type="file" id="uploadfile"  class="input">
+
+				<!-- <input type="submit" class="input" id="submitbtn" > -->
+				<input type="button" id="submitbtn"  class="input" value="Submit">
+			</form>
+			<span id="text1">(.txt files only)</span>
+			<br>
+			<!-- Upload File -->
+		</div>
+		<h2 class="align">STEP 2: SELECT &nbspACTION</h2>
+		<div class="align" id="step2">
+			<!-- &emsp;&emsp;&emsp;&emsp; -->
+			<img src="assets/options_icon2.png" id="optionsImg">
+			<br>
+			<button type="button" id="encode" class="button" >COMPRESS</button>
+			&nbsp or &nbsp;
+			<!-- &emsp;&emsp;&emsp;&emsp; -->
+			<button type="button" id="decode" class="button" >DE-COMPRESS</button>
+			<!-- Select Action -->
+			<br>
+		</div>
+		<h2 class="align" >STEP 3: SIT BACK AND RELAX</h2>
+		<div class="align" id="step3" >
+			<img src="assets/wait_icon1.png" id="waitImg">
+			<br>
+			<!-- Wait a moment -->
+		</div>
+		<br>
+		<span class="align" id="text4">
+			<button type="button" onclick="location.reload()" >Click Here</button> to Start Again! 
+		</span>
+	</div>
+	<span class="text">
+		Want to know more about the compression technique used by this tool? 
+		<a href="info.html"	class="links" id="link1" target="_blank">Click Here!</a>
+	</span>
+
+</body>
+
+</html>
