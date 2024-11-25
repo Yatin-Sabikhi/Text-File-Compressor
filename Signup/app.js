@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (username && email && password) {
       alert(`Thank you for signing up, ${username}! Your account is ready.`);
       // Redirect to a login page or a welcome page
-      window.location.href = "welcome.html"; // Change 'welcome.html' to your desired page
+      window.location.href = "https://text-file-compressor-rust.vercel.app/Dashboard/dashboard.html"; // Change 'welcome.html' to your desired page
     } else {
       alert("Please fill in all the fields to sign up.");
     }
