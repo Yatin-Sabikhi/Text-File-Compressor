@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (email && password) {
       alert(`Welcome back, ${email}!`);
       // Redirect to another page
-      window.location.href = "dashboard.html"; // Change 'dashboard.html' to your desired page
+      window.location.href = "https://text-file-compressor-rust.vercel.app/Dashboard/dashboard.html"; // Change 'dashboard.html' to your desired page
     } else {
       alert("Please enter valid login credentials.");
     }
