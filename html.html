@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Compression Dashboard</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -41,11 +41,14 @@
         </div>
         
         <!-- Compress Button -->
-        <button id="compress-btn" onclick="compressFiles()">Compress Files</button>
+        <div>
+            <button id="compress-btn" onclick="compressFiles()">Compress Files</button>
+            <button id="decompress-btn" onclick="decompressFiles()">Decompress Files</button>
+        </div>
       
     
     </div>
 
-    <script src="html.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

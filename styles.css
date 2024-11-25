@@ -52,8 +52,22 @@ body {
     font-size: 16px;
 }
 
+#decompress-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 #compress-btn:hover {
     background-color: #218838;
+}
+
+#decompress-btn:hover {
+    background-color: #2980b9;
 }
 
 body {
@@ -117,6 +131,7 @@ button {
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
 }
+
 
 button:hover {
     background-color: #2980b9; /* Darker blue on hover */
