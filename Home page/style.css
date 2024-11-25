@@ -49,6 +49,7 @@ header {
   color: #bb86fc; /* Light purple */
   text-decoration: none;
   font-weight: 600;
+  /* margin-top: 10px; */
 }
 
 .menu_items {
@@ -65,6 +66,23 @@ a {
 
 a:hover {
   color: #bb86fc; /* Light purple on hover */
+}
+.login_btn {
+  margin-left: auto; /* Push it to the extreme right */
+  background-color: #bb86fc; /* Purple background */
+  color: #1a1a1a; /* Dark text */
+  padding: 10px 14px;
+  border: 2px solid #bb86fc;
+  border-radius: 0; /* Square borders */
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login_btn:hover {
+  background-color: transparent;
+  color: #bb86fc; /* Purple text */
+  border-color: #bb86fc; /* Purple border */
+  transform: scale(1.05);
 }
 
 /* Hero Section */

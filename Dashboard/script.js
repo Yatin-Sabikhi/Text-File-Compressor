@@ -208,3 +208,19 @@ function decompressFiles() {
         alert('Please upload a valid .bin file for decompression.');
     }
 }
+
+// Function to trigger file download
+function decompress() {
+    const filePath = "folder/sample.txt"; // Path to the file in your app
+    const fileName = "sample.txt"; // File name for download
+
+    // Create a temporary link element
+    const link = document.createElement("a");
+    link.href = filePath;
+    link.download = fileName;
+
+    // Append the link to the document, trigger the download, and remove the link
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
