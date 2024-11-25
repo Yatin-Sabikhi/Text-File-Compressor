@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    width: 600px;
+}
+
+.drop-area {
+    border: 2px dashed #aaa;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.drop-area:hover {
+    border-color: #333;
+}
+
+.file-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.file-table th, .file-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.quality-controls {
+    margin: 20px 0;
+}
+
+#compress-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#decompress-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#compress-btn:hover {
+    background-color: #218838;
+}
+
+#decompress-btn:hover {
+    background-color: #2980b9;
+}
+
+body {
+    background-color: #f4f4f4; /* Light grey background for a classy look */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    color: #333; /* Dark grey text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Limit the width of the container */
+    margin: 50px auto; /* Center the container */
+    padding: 20px;
+    background-color: #fff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    color: #2c3e50; /* Darker shade for the heading */
+}
+
+.drop-area {
+    border: 2px dashed #3498db; /* Dashed border for the drop area */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ecf6fd; /* Light blue background for the drop area */
+}
+
+.file-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-bottom: 20px; /* Space below the table */
+}
+
+.file-table th, .file-table td {
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 10px; /* Padding inside cells */
+    text-align: left; /* Left align text */
+}
+
+.file-table th {
+    background-color: #3498db; /* Blue background for the header */
+    color: white; /* White text for header */
+}
+
+.quality-controls {
+    margin: 20px 0; /* Space above and below the quality controls */
+    text-align: center; /* Center the controls */
+}
+
+button {
+    background-color: #3498db; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}

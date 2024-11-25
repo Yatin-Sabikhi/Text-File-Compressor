@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Compression Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>File Compression Dashboard</h1>
+        
+        <!-- Drag and Drop Area -->
+        <div class="drop-area" id="drop-area">
+            <p>Drag & Drop your files here</p>
+            <input type="file" id="file-input" multiple>
+            <button onclick="document.getElementById('file-input').click()">Browse Files</button>
+        </div>
+        
+        <!-- File Details Table -->
+        <table id="file-table" class="file-table">
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Original Size</th>
+                    <th>Compressed Size (Est.)</th>
+                    <th>Compression Quality</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <!-- Compression Quality Selection -->
+        <div class="quality-controls">
+            <label for="quality">Choose Compression Quality:</label>
+            <select id="quality">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+        </div>
+        
+        <!-- Compress Button -->
+        <div>
+            <button id="compress-btn" onclick="compressFiles()">Compress Files</button>
+            <button id="decompress-btn" onclick="decompressFiles()">Decompress Files</button>
+        </div>
+      
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
